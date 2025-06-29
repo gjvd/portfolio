@@ -40,3 +40,6 @@ For any questions or suggestions, go to website and submit the contact form. fee
 ---
 
 Thank you for visiting my portfolio website!
+
+username: girirajpatoliya
+password: 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
