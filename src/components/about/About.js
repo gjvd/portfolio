@@ -6,30 +6,40 @@ import { useInView } from 'react-intersection-observer';
 
 const techStack = {
     languages: [
-        { src: require('../../assets/icons/c-.png'), name: 'C++' },
-        { src: require('../../assets/icons/java.png'), name: 'Java' },
-        { src: require('../../assets/icons/python.png'), name: 'Python' },
-        { src: require('../../assets/icons/php.png'), name: 'PHP' },
-        { src: require('../../assets/icons/c-sharp.png'), name: 'C-Sharp' },
+        { src: require('../../assets/icons/mongodb.png'), name: 'Python' },
+        { src: require('../../assets/icons/mongodb.png'), name: 'JavaScript' },
     ],
+
     frameworks: [
-        { src: require('../../assets/icons/html-5.png'), name: 'HTML' },
-        { src: require('../../assets/icons/css-3.png'), name: 'CSS' },
-        { src: require('../../assets/icons/js.png'), name: 'JavaScript' },
-        { src: require('../../assets/icons/react.png'), name: 'React' },
-        { src: require('../../assets/icons/nodejs.png'), name: 'NodeJs' },
-        { src: require('../../assets/icons/mongodb.png'), name: 'MongoDB' },
+        { src: require('../../assets/icons/mongodb.png'), name: 'React' },
+        { src: require('../../assets/icons/mongodb.png'), name: 'Node.js' },
+        { src: require('../../assets/icons/mongodb.png'), name: 'Next.js' },
         { src: require('../../assets/icons/tailwindcss.png'), name: 'TailwindCSS' },
     ],
+
+    databases: [
+        { src: require('../../assets/icons/mongodb.png'), name: 'MongoDB' },
+        { src: require('../../assets/icons/mongodb.png'), name: 'MySQL' },
+        { src: require('../../assets/icons/mongodb.png'), name: 'PostgreSQL' },
+        { src: require('../../assets/icons/mongodb.png'), name: 'DynamoDB' },
+        { src: require('../../assets/icons/mongodb.png'), name: 'Firebase' },
+    ],
+
+    cloudServices: [
+        { src: require('../../assets/icons/mongodb.png'), name: 'AWS (Lambda, S3, API Gateway)' },
+        { src: require('../../assets/icons/mongodb.png'), name: 'Stripe Payments' },
+        { src: require('../../assets/icons/mongodb.png'), name: 'Twilio SMS/WhatsApp' },
+    ],
+
     tools: [
-        { src: require('../../assets/icons/figma.png'), name: 'Figma' },
-        { src: require('../../assets/icons/firebase.png'), name: 'Firebase' },
+        { src: require('../../assets/icons/mongodb.png'), name: 'Postman' },
+        { src: require('../../assets/icons/mongodb.png'), name: 'Jira' },
+        { src: require('../../assets/icons/mongodb.png'), name: 'Trello' },
         { src: require('../../assets/icons/git.png'), name: 'Git' },
         { src: require('../../assets/icons/github.png'), name: 'GitHub' },
-        { src: require('../../assets/icons/sql.png'), name: 'SQL' },
-        { src: require('../../assets/icons/visual-studio.png'), name: 'Visual Studio' },
     ],
 };
+
 
 
 const profileLinks = [
@@ -65,17 +75,11 @@ const About = () => {
                     <h4>About Me</h4>
                     <h2>Giriraj Patoliya</h2>
                     <p>
-                        I hold a Bachelor's degree in Computer Applications from Veer Narmad South Gujarat University and am currently advancing my studies at Nirma University. I am passionate about exploring and mastering emerging technologies to address real-world challenges. Throughout my academic journey, I have gained strong proficiency in a range of programming languages, including C, C++, HTML, CSS, and JavaScript, with a particular focus on web development.
-                    </p>
-                    <p>
-                        My experience with ReactJS has provided me with a deep understanding of this powerful framework, allowing me to build efficient, dynamic, and user-friendly web applications. Additionally, I have hands-on experience working with MySQL databases and leveraging WordPress for web development projects.
-                    </p>
-                    <p>
-                        I am always eager to expand my knowledge and stay at the forefront of technological advancements, continuously seeking opportunities to collaborate on innovative projects and contribute to impactful solutions.
+                        Highly skilled React and Node.js Developer with extensive experience in designing and developing scalable, high-performance web applications. Proficient in creating dynamic user interfaces, building robust backend systems, and integrating databases like MongoDB and Firebase. Expertise in RESTful APIs, state management tools (Redux, Context API), and third-party integrations. Adept at deploying and maintaining applications on AWS, Vercel, and other cloud platforms. Passionate about delivering high-quality solutions tailored to client and user needs, with a strong focus on clean code and performance optimization.
                     </p>
                     {/* https://drive.google.com/file/d/1LwvBzRpjYZtC3JkqiJ3zNxHuqLbihTnd/view?usp=sharing -- old */}
                     <a
-                        href="https://drive.google.com/file/d/1zhshbXvtzirMoO6ieSdsUhsmVK0EIFF9/view?usp=sharing"
+                        href="https://docs.google.com/document/d/1tsqd6lSwMQLhuPeVmvNOkGI0wiTY91G3ZU-LiF7u4AI/edit?usp=sharing"
                         className="codepen-button" target='_blank'
                     >
                         <span>Download CV</span>
@@ -89,20 +93,17 @@ const About = () => {
                 </div>
                 <div className="work-item">
                     <h2>5+</h2>
-                    <p>React Project</p>
+                    <p>Python Projects</p>
                 </div>
                 <div className="work-item">
                     <h2>4+</h2>
-                    <p>Month of Company experience</p>
-                </div>
-                <div className="work-item">
-                    <h2>250+</h2>
-                    <p>DSA Questions Solved</p>
+                    <p>React & Node.js Projects</p>
                 </div>
             </motion.div>
 
             <div className="languages">
                 <h4>Tech Stack</h4>
+
                 <div>
                     <h2>1. Languages</h2>
                     <ul>
@@ -119,8 +120,9 @@ const About = () => {
                         ))}
                     </ul>
                 </div>
+
                 <div>
-                    <h2>2. Framework and Libraries</h2>
+                    <h2>2. Frameworks & Libraries</h2>
                     <ul>
                         {techStack.frameworks.map((item, index) => (
                             <motion.li
@@ -135,8 +137,43 @@ const About = () => {
                         ))}
                     </ul>
                 </div>
+
                 <div>
-                    <h2>3. Other Tools & Technologies</h2>
+                    <h2>3. Databases</h2>
+                    <ul>
+                        {techStack.databases.map((item, index) => (
+                            <motion.li
+                                key={index}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ duration: 1 }}
+                            >
+                                <img src={item.src} alt={item.name} />
+                                <p>{item.name}</p>
+                            </motion.li>
+                        ))}
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>4. Cloud & Integrations</h2>
+                    <ul>
+                        {techStack.cloudServices.map((item, index) => (
+                            <motion.li
+                                key={index}
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ duration: 1 }}
+                            >
+                                <img src={item.src} alt={item.name} />
+                                <p>{item.name}</p>
+                            </motion.li>
+                        ))}
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>5. Tools & Platforms</h2>
                     <ul>
                         {techStack.tools.map((item, index) => (
                             <motion.li
@@ -152,6 +189,7 @@ const About = () => {
                     </ul>
                 </div>
             </div>
+
             <motion.div className="profile-links" {...fadeIn}>
                 <h4>Profile Links</h4>
                 <div className='card-container'>

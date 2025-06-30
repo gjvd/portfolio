@@ -24,34 +24,27 @@ const Education = () => {
                 <div className='timeline'>
                     <div className='timeline-item'>
                         <div className='timeline-content'>
-                            <h2>Year 2018</h2>
+                            <h2>Year 2011</h2>
                             <h3>SSC</h3>
-                            <p>Gurukul Vidhyapith Kumar Vidhyalaya, Katargam, Surat</p>
-                            <p className='highlight'>Percentage: 59.9%</p>
+                            <p>Shree Navijiavan Kumar Chatralaya, Navagadh</p>
+                            <p className='highlight'>Percentage: 67.33%</p>
+                        </div>
+                    </div>
+
+                    <div className='timeline-item'>
+                        <div className='timeline-content'>
+                            <h2>Year 2011-2014</h2>
+                            <h3>Diploma in I.T.</h3>
+                            <p>Om Institute of Engineering and Technology, Junagadh</p>
+                            <p className='highlight'>CGPA: 7.40</p>
                         </div>
                     </div>
                     <div className='timeline-item'>
                         <div className='timeline-content'>
-                            <h2>Year 2020</h2>
-                            <h3>HSC</h3>
-                            <p>P.P. Savani Vidhyabhawan, Hirabaug, Surat.</p>
-                            <p className='highlight'>Percentage: 73.73%</p>
-                        </div>
-                    </div>
-                    <div className='timeline-item'>
-                        <div className='timeline-content'>
-                            <h2>Year 2020-2023</h2>
-                            <h3>Bachelor of Computer Application (BCA)</h3>
-                            <p>Veer Narmad South Gujarat University, Surat</p>
-                            <p className='highlight'>CGPA: 7.20</p>
-                        </div>
-                    </div>
-                    <div className='timeline-item'>
-                        <div className='timeline-content'>
-                            <h2>Year2023-2025</h2>
-                            <h3>Master of Computer Application (MCA)</h3>
-                            <p>Institute of Technology Nirma University, Ahmedabad.</p>
-                            <p className='highlight'>CGPA: 7.75</p>
+                            <h2>Year 2014-2017</h2>
+                            <h3>Bachelor of Engineering (I.T.)</h3>
+                            <p>Noble Group of Institutions, Junagadh</p>
+                            <p className='highlight'>CGPA: 8.30</p>
                         </div>
                     </div>
                 </div>
