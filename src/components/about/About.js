@@ -41,6 +41,7 @@ const profileLinks = [
     { href: "https://www.geeksforgeeks.org/user/vrajchovatiya11/", src: "https://asset.brandfetch.io/idw2s-0Tuo/idushz6qWf.png", alt: "GeeksForGeeks" }
 ];
 
+console.log("profileLinks********", profileLinks)
 
 const About = () => {
 
