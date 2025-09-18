@@ -4,22 +4,22 @@ import { color, motion, useAnimation } from 'framer-motion';
 
 const experiences = [
     {
-        company: 'Varni Infotech',
-        role: 'ReactJs Intern',
-        location: 'Surat',
-        timeLine: 'Jun 2023 - Aug 2023',
+        company: 'Swan Softweb Solutions',
+        role: 'Python Developer',
+        location: 'Ahmedabad',
+        timeLine: 'Apr 2018 - Mar 2020',
     },
     {
-        company: 'Prodigy Infotech',
-        role: 'Web Developer Intern',
-        location: 'Remote',
-        timeLine: 'march 2024 - march 2024',
+        company: 'Perception System Private Limited',
+        role: 'Python Developer, React Developer, Node.js Developer',
+        location: 'Ahmedabad',
+        timeLine: 'Aug 2020 - Sep 2024',
     },
     {
-        company: 'Yami IT Solutions PVT. LTD.',
-        role: 'Front-end Developer Intern',
+        company: 'Prestious IT Solutions',
+        role: 'Software Development Engineer (MERN Stack Developer)',
         location: 'Surat',
-        timeLine: 'Jun 2024 - Jul 2024',
+        timeLine: 'Apr 2025 - Present',
     },
 ];
 

@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import image from '../../assets/img/Me.jpg';
+// import image from '../../assets/img/Me.jpg';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import ParticlesBackground from './ParticlesBackground';
 
 import './home.css';
+
+import image from 'url:../../assets/img/Me.jpg';
 
 const Home = () => {
 
@@ -19,7 +21,6 @@ const Home = () => {
         window.scrollTo(0, 0);
     }, []);
 
-    console.log("image********", image)
 
     return (
         <>
@@ -63,7 +64,7 @@ const Home = () => {
                     <div className="overlay" onClick={toggleFullScreen}>
                         <motion.img
                             src={image}
-                            alt="Giriraj Patoliya"
+                            alt="Giriraj Patoliya1"
                             className="full-image"
                             initial={{ scale: 0 }}
                             animate={{ scale: 1 }}

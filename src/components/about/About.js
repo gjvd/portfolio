@@ -3,31 +3,59 @@ import './about.css';
 import { color, motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
+// Import all images using Parcel's url: prefix
+import pythonIcon from 'url:../../assets/icons/python.png';
+import jsIcon from 'url:../../assets/icons/js.png';
+import reactIcon from 'url:../../assets/icons/react.png';
+import nodejsIcon from 'url:../../assets/icons/nodejs.png';
+import nextjsIcon from 'url:../../assets/icons/nextjs.png';
+import tailwindcssIcon from 'url:../../assets/icons/tailwindcss.png';
+import mongodbIcon from 'url:../../assets/icons/mongodb.png';
+import mysqlIcon from 'url:../../assets/icons/mysql.png';
+import postgresqlIcon from 'url:../../assets/icons/postgresql.png';
+import dynamodbIcon from 'url:../../assets/icons/dynamodb.png';
+import firebaseIcon from 'url:../../assets/icons/firebase.png';
+import awsIcon from 'url:../../assets/icons/aws.png';
+import stripeIcon from 'url:../../assets/icons/stripe.png';
+import twillioIcon from 'url:../../assets/icons/twillio.png';
+import postmanIcon from 'url:../../assets/icons/postman.png';
+import jiraIcon from 'url:../../assets/icons/jira.png';
+import trelloIcon from 'url:../../assets/icons/trello.png';
+import gitIcon from 'url:../../assets/icons/git.png';
+import githubIcon from 'url:../../assets/icons/github.png';
+
 
 const techStack = {
     languages: [
-        { src: require('../../assets/icons/c-.png'), name: 'C++' },
-        { src: require('../../assets/icons/java.png'), name: 'Java' },
-        { src: require('../../assets/icons/python.png'), name: 'Python' },
-        { src: require('../../assets/icons/php.png'), name: 'PHP' },
-        { src: require('../../assets/icons/c-sharp.png'), name: 'C-Sharp' },
+        { src: pythonIcon, name: 'Python' },
+        { src: jsIcon, name: 'JavaScript' },
     ],
     frameworks: [
-        { src: require('../../assets/icons/html-5.png'), name: 'HTML' },
-        { src: require('../../assets/icons/css-3.png'), name: 'CSS' },
-        { src: require('../../assets/icons/js.png'), name: 'JavaScript' },
-        { src: require('../../assets/icons/react.png'), name: 'React' },
-        { src: require('../../assets/icons/nodejs.png'), name: 'NodeJs' },
-        { src: require('../../assets/icons/mongodb.png'), name: 'MongoDB' },
-        { src: require('../../assets/icons/tailwindcss.png'), name: 'TailwindCSS' },
+        { src: reactIcon, name: 'React' },
+        { src: nodejsIcon, name: 'Node.js' },
+        { src: nextjsIcon, name: 'Next.js' },
+        { src: tailwindcssIcon, name: 'TailwindCSS' },
+    ],
+
+    databases: [
+        { src: mongodbIcon, name: 'MongoDB' },
+        { src: mysqlIcon, name: 'MySQL' },
+        { src: postgresqlIcon, name: 'PostgreSQL' },
+        { src: dynamodbIcon, name: 'DynamoDB' },
+        { src: firebaseIcon, name: 'Firebase' },
+    ],
+
+    cloudServices: [
+        { src: awsIcon, name: 'AWS (Lambda, S3, API Gateway)' },
+        { src: stripeIcon, name: 'Stripe Payments' },
+        { src: twillioIcon, name: 'Twilio SMS/WhatsApp' },
     ],
     tools: [
-        { src: require('../../assets/icons/figma.png'), name: 'Figma' },
-        { src: require('../../assets/icons/firebase.png'), name: 'Firebase' },
-        { src: require('../../assets/icons/git.png'), name: 'Git' },
-        { src: require('../../assets/icons/github.png'), name: 'GitHub' },
-        { src: require('../../assets/icons/sql.png'), name: 'SQL' },
-        { src: require('../../assets/icons/visual-studio.png'), name: 'Visual Studio' },
+        { src: postmanIcon, name: 'Postman' },
+        { src: jiraIcon, name: 'Jira' },
+        { src: trelloIcon, name: 'Trello' },
+        { src: gitIcon, name: 'Git' },
+        { src: githubIcon, name: 'GitHub' },
     ],
 };
 
@@ -153,7 +181,8 @@ const About = () => {
                     </ul>
                 </div>
             </div>
-            <motion.div className="profile-links" {...fadeIn}>
+
+            {/* <motion.div className="profile-links" {...fadeIn}>
                 <h4>Profile Links</h4>
                 <div className='card-container'>
                     {profileLinks.map((item, index) => (
@@ -165,7 +194,7 @@ const About = () => {
                         </div>
                     ))}
                 </div>
-            </motion.div>
+            </motion.div> */}
         </div>
     );
 };

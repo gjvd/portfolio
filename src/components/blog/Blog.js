@@ -20,7 +20,8 @@ const Blog = () => {
                     <p>Here's the information about my blog...</p>
                 </motion.div>
                 <motion.div className='blog-content' {...fadeIn}>
-                    <h2>Under Construction...😉 but you can check <a href="https://medium.com/@vrajchovatiya414" target='_blank'>here</a></h2>
+                    <h2>Under Construction...😉</h2>
+                    {/* but you can check <a href="https://medium.com/@vrajchovatiya414" target='_blank'>here</a></h2> */}
                 </motion.div>
             </div>
         </>

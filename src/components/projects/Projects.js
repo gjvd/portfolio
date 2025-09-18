@@ -22,7 +22,11 @@ const Projects = () => {
                 <h1>Here are My Projects</h1>
                 <p>Here's the project that I have created In this journey..</p>
             </motion.div>
-            <motion.div className="project-container" {...fadeIn}>
+            <motion.div className='blog-content' {...fadeIn}>
+                <h2>Under Construction...😉</h2>
+                {/* but you can check <a href="https://medium.com/@vrajchovatiya414" target='_blank'>here</a></h2> */}
+            </motion.div>
+            {/* <motion.div className="project-container" {...fadeIn}>
                 {projects.map((project) => (
                     <div key={project.id} className="project-card">
                         <img src={project.image} alt={project.title} className="project-image" />
@@ -33,7 +37,7 @@ const Projects = () => {
                         </div>
                     </div>
                 ))}
-            </motion.div>
+            </motion.div> */}
         </>
     );
 };

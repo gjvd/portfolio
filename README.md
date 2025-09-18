@@ -41,5 +41,3 @@ For any questions or suggestions, go to website and submit the contact form. fee
 
 Thank you for visiting my portfolio website!
 
-username: girirajpatoliya
-password: https://github.com/settings/tokens 
