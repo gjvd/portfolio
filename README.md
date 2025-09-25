@@ -1,7 +1,7 @@
 # Portfolio Website
 
 <!-- ![Portfolio Banner]("https://i.imgur.com/vTUrDak.png") -->
-![alt text](https://i.imgur.com/xNtQUht.png)
+<!-- ![alt text](https://i.imgur.com/xNtQUht.png) -->
 <!-- ![alt text](https://i.imgur.com/vTUrDak.png) -->
 <!-- ![alt text](https://i.imgur.com/GuJ5x40.png) -->
 
