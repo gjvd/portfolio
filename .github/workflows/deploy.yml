@@ -35,7 +35,7 @@ jobs:
       - name: Upload production-ready build files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build   # for CRA; use `dist` if Vite or Next export
+          path: ./dist   # for CRA; use `dist` if Vite or Next export
 
   deploy:
     environment:
