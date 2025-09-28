@@ -1,7 +1,7 @@
 # Portfolio Website
 
 <!-- ![Portfolio Banner]("https://i.imgur.com/vTUrDak.png") -->
-![alt text](https://i.imgur.com/xNtQUht.png)
+<!-- ![alt text](https://i.imgur.com/xNtQUht.png) -->
 <!-- ![alt text](https://i.imgur.com/vTUrDak.png) -->
 <!-- ![alt text](https://i.imgur.com/GuJ5x40.png) -->
 
@@ -41,5 +41,3 @@ For any questions or suggestions, go to website and submit the contact form. fee
 
 Thank you for visiting my portfolio website!
 
-username: girirajpatoliya
-password: https://github.com/settings/tokens // token: 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

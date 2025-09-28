@@ -3,18 +3,53 @@ import './about.css';
 import { color, motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
+// Import all images using Parcel's url: prefix
+import pythonIcon from 'url:../../assets/icons/python.png';
+import jsIcon from 'url:../../assets/icons/js.png';
+import reactIcon from 'url:../../assets/icons/react.png';
+import nodejsIcon from 'url:../../assets/icons/nodejs.png';
+import nextjsIcon from 'url:../../assets/icons/nextjs.png';
+import tailwindcssIcon from 'url:../../assets/icons/tailwindcss.png';
+import mongodbIcon from 'url:../../assets/icons/mongodb.png';
+import mysqlIcon from 'url:../../assets/icons/mysql.png';
+import postgresqlIcon from 'url:../../assets/icons/postgresql.png';
+import dynamodbIcon from 'url:../../assets/icons/dynamodb.png';
+import firebaseIcon from 'url:../../assets/icons/firebase.png';
+import awsIcon from 'url:../../assets/icons/aws.png';
+import stripeIcon from 'url:../../assets/icons/stripe.png';
+import twillioIcon from 'url:../../assets/icons/twillio.png';
+import postmanIcon from 'url:../../assets/icons/postman.png';
+import jiraIcon from 'url:../../assets/icons/jira.png';
+import trelloIcon from 'url:../../assets/icons/trello.png';
+import gitIcon from 'url:../../assets/icons/git.png';
+import githubIcon from 'url:../../assets/icons/github.png';
+
 
 const techStack = {
     languages: [
-        { src: require('../../assets/icons/mongodb.png'), name: 'Python' },
-        { src: require('../../assets/icons/mongodb.png'), name: 'JavaScript' },
+        { src: pythonIcon, name: 'Python' },
+        { src: jsIcon, name: 'JavaScript' },
     ],
 
     frameworks: [
-        { src: require('../../assets/icons/mongodb.png'), name: 'React' },
-        { src: require('../../assets/icons/mongodb.png'), name: 'Node.js' },
-        { src: require('../../assets/icons/mongodb.png'), name: 'Next.js' },
-        { src: require('../../assets/icons/tailwindcss.png'), name: 'TailwindCSS' },
+        { src: reactIcon, name: 'React' },
+        { src: nodejsIcon, name: 'Node.js' },
+        { src: nextjsIcon, name: 'Next.js' },
+        { src: tailwindcssIcon, name: 'TailwindCSS' },
+    ],
+
+    databases: [
+        { src: mongodbIcon, name: 'MongoDB' },
+        { src: mysqlIcon, name: 'MySQL' },
+        { src: postgresqlIcon, name: 'PostgreSQL' },
+        { src: dynamodbIcon, name: 'DynamoDB' },
+        { src: firebaseIcon, name: 'Firebase' },
+    ],
+
+    cloudServices: [
+        { src: awsIcon, name: 'AWS (Lambda, S3, API Gateway)' },
+        { src: stripeIcon, name: 'Stripe Payments' },
+        { src: twillioIcon, name: 'Twilio SMS/WhatsApp' },
     ],
 
     databases: [
@@ -32,11 +67,11 @@ const techStack = {
     ],
 
     tools: [
-        { src: require('../../assets/icons/mongodb.png'), name: 'Postman' },
-        { src: require('../../assets/icons/mongodb.png'), name: 'Jira' },
-        { src: require('../../assets/icons/mongodb.png'), name: 'Trello' },
-        { src: require('../../assets/icons/git.png'), name: 'Git' },
-        { src: require('../../assets/icons/github.png'), name: 'GitHub' },
+        { src: postmanIcon, name: 'Postman' },
+        { src: jiraIcon, name: 'Jira' },
+        { src: trelloIcon, name: 'Trello' },
+        { src: gitIcon, name: 'Git' },
+        { src: githubIcon, name: 'GitHub' },
     ],
 };
 
@@ -51,6 +86,7 @@ const profileLinks = [
     { href: "https://www.geeksforgeeks.org/user/vrajchovatiya11/", src: "https://asset.brandfetch.io/idw2s-0Tuo/idushz6qWf.png", alt: "GeeksForGeeks" }
 ];
 
+console.log("profileLinks********", profileLinks)
 
 const About = () => {
 
@@ -190,7 +226,7 @@ const About = () => {
                 </div>
             </div>
 
-            <motion.div className="profile-links" {...fadeIn}>
+            {/* <motion.div className="profile-links" {...fadeIn}>
                 <h4>Profile Links</h4>
                 <div className='card-container'>
                     {profileLinks.map((item, index) => (
@@ -202,7 +238,7 @@ const About = () => {
                         </div>
                     ))}
                 </div>
-            </motion.div>
+            </motion.div> */}
         </div>
     );
 };
