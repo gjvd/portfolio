@@ -4,6 +4,7 @@
     "description": "",
     "scripts": {
         "start": "parcel src/index.html",
+        "homepage": "https://gjvd.github.io/protfolio/",
         "predeploy": "parcel build src/index.html --public-url ./",
         "deploy": "gh-pages -d dist",
         "build": "parcel build src/index.html",
