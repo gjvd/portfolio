@@ -39,7 +39,11 @@ const Home = () => {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.2 }}
                     >
-                        Dedicated ReactJS developer with extensive project-based expertise in building seamless, visually appealing web apps. Expert in creating attractive user interfaces, integrating backend services, and ensuring easy navigation.
+                        Full‑stack (MERN) developer with 6 + years of hands‑on experience
+                        delivering robust, scalable web solutions—from pixel‑perfect React UIs
+                        to high‑performance Node/Express back‑ends and MongoDB data models.
+                        Passionate about clean code, seamless user journeys, and shipping
+                        production‑ready features at startup speed.
                     </motion.p>
                     <motion.div
                         initial={{ opacity: 0, scale: 0.8 }}
